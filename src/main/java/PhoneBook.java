@@ -5,6 +5,7 @@ public class PhoneBook {
     Map<String, Integer> phoneBook = new HashMap<>();
 
     public int add(String name, int phone) {
-        return 0;
+        phoneBook.put(name, phone);
+        return phoneBook.size();
     }
 }
