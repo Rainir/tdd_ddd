@@ -31,6 +31,11 @@ public class PhoneBook {
     }
 
     public String printAllNames() {
-        return null;
+        StringBuilder names = new StringBuilder();
+        Map<String, Integer> phoneBookSort = new TreeMap<>(phoneBook);
+        for (Map.Entry<String, Integer> entry : phoneBookSort.entrySet()) {
+            names.append(entry.getKey()).append("\n");
+        }
+        return names.toString();
     }
 }
