@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class PhoneBook {
     Map<String, Integer> phoneBook = new HashMap<>();
@@ -27,5 +28,9 @@ public class PhoneBook {
             }
         }
         return phone;
+    }
+
+    public String printAllNames() {
+        return null;
     }
 }

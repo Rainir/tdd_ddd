@@ -37,4 +37,14 @@ public class PhoneBookTest {
         sut.add("Nike", 354681);
         assertEquals(sut.findByName("Nike"), 354681);
     }
+
+    @Test
+    public void testPrintAllNames() {
+        sut.add("Nike", 354681);
+        sut.add("Anny", 481900);
+        sut.add("Mike", 731854);
+        assertEquals(sut.printAllNames(), "Anny\n" +
+                                                "Mike\n" +
+                                                "Nike\n");
+    }
 }
